@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    .button {
+      background-color: #1c87c9;
+      -webkit-border-radius: 60px;
+      border-radius: 60px;
+      border: none;
+      color: azure;
+      cursor: pointer;
+      display: inline-block;
+      font-family: sans-serif;
+      font-size: 20px;
+      padding: 5px 15px;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    @keyframes glowing {
+      0% {
+        background-color: #2bA805;
+        box-shadow: 0 0 20px #2bA805;
+      }
+
+      50% {
+        background-color: #49e819;
+        box-shadow: 0 0 20px #49e819;
+      }
+
+      100% {
+        background-color: #2bA805;
+        box-shadow: 0 0 20px #2bA805;
+      }
+    }
+
+    .button {
+      animation: glowing 1300ms infinite;
+    }
+    .svg-btn {
+      display: block;
+      width: 230px;
+      height: 230px;
+      margin-left: 10px;
+    }
+    svg {
+      fill: blue;
+      -webkit-animation: glowing-polygon 1300ms 
+      infinite;
+      -moz-animation: glowing-polygon 1300ms infinite;
+      -o-animation: glowing-polygon 1300ms infinite;
+      animation: glowing-polygon 1300ms infinite;
+    }
+    @-webkit-keyframes glowing-polygon {
+      0% {
+        fill: #0091b2;
+        -webkit-filter: drop-shadow(0 0 3px #0091b2);
+      }
+      50% {
+        fill: #21c7ed;
+        -webkit-filter: drop-shadow(0 0 3px #21c7ed);
+      }
+      100% {
+        fill: #0091b2;
+        -webkit-filter: drop-shadow(0 0 3px #0091b2);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Glowing BUTTON made by DEVS-RK</h2>
+  <button type="submit" class="button">
+    ENVOYER
+  </button>
+  <h2>Glowing STAR made by DEVS-RK</h2>
+  <a class="svg-btn">
+    <svg height="210" width="220">
+      <polygon points="100,10 40,198 190,78 10,78
+       160,198" style="fill: #0091b2" />
+    </svg>
+  </a>
+</body>
+
+</html>
